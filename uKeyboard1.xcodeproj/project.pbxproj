@@ -14,6 +14,8 @@
 		0DFFF4241DF06E5900670F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFFF4221DF06E5900670F2B /* LaunchScreen.storyboard */; };
 		0DFFF42F1DF06E5900670F2B /* uKeyboard1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF42E1DF06E5900670F2B /* uKeyboard1Tests.swift */; };
 		0DFFF43A1DF06E5900670F2B /* uKeyboard1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF4391DF06E5900670F2B /* uKeyboard1UITests.swift */; };
+		0DFFF44E1DF06EBA00670F2B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */; };
+		0DFFF4521DF06EBA00670F2B /* uKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = 0DFFF4151DF06E5800670F2B;
 			remoteInfo = uKeyboard1;
 		};
+		0DFFF4501DF06EBA00670F2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DFFF40E1DF06E5800670F2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DFFF44A1DF06EB900670F2B;
+			remoteInfo = uKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0DFFF4561DF06EBA00670F2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0DFFF4521DF06EBA00670F2B /* uKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0DFFF4161DF06E5900670F2B /* uKeyboard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uKeyboard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,9 @@
 		0DFFF4351DF06E5900670F2B /* uKeyboard1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uKeyboard1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF4391DF06E5900670F2B /* uKeyboard1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uKeyboard1UITests.swift; sourceTree = "<group>"; };
 		0DFFF43B1DF06E5900670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = uKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0DFFF44F1DF06EBA00670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DFFF4481DF06EB900670F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +113,7 @@
 				0DFFF4181DF06E5900670F2B /* uKeyboard1 */,
 				0DFFF42D1DF06E5900670F2B /* uKeyboard1Tests */,
 				0DFFF4381DF06E5900670F2B /* uKeyboard1UITests */,
+				0DFFF44C1DF06EBA00670F2B /* uKeyboard */,
 				0DFFF4171DF06E5900670F2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 				0DFFF4161DF06E5900670F2B /* uKeyboard1.app */,
 				0DFFF42A1DF06E5900670F2B /* uKeyboard1Tests.xctest */,
 				0DFFF4351DF06E5900670F2B /* uKeyboard1UITests.xctest */,
+				0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +160,15 @@
 			path = uKeyboard1UITests;
 			sourceTree = "<group>";
 		};
+		0DFFF44C1DF06EBA00670F2B /* uKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */,
+				0DFFF44F1DF06EBA00670F2B /* Info.plist */,
+			);
+			path = uKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +179,12 @@
 				0DFFF4121DF06E5800670F2B /* Sources */,
 				0DFFF4131DF06E5800670F2B /* Frameworks */,
 				0DFFF4141DF06E5800670F2B /* Resources */,
+				0DFFF4561DF06EBA00670F2B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0DFFF4511DF06EBA00670F2B /* PBXTargetDependency */,
 			);
 			name = uKeyboard1;
 			productName = uKeyboard1;
@@ -181,6 +227,23 @@
 			productReference = 0DFFF4351DF06E5900670F2B /* uKeyboard1UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0DFFF44A1DF06EB900670F2B /* uKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DFFF4531DF06EBA00670F2B /* Build configuration list for PBXNativeTarget "uKeyboard" */;
+			buildPhases = (
+				0DFFF4471DF06EB900670F2B /* Sources */,
+				0DFFF4481DF06EB900670F2B /* Frameworks */,
+				0DFFF4491DF06EB900670F2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uKeyboard;
+			productName = uKeyboard;
+			productReference = 0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +268,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0DFFF4151DF06E5800670F2B;
 					};
+					0DFFF44A1DF06EB900670F2B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0DFFF4111DF06E5800670F2B /* Build configuration list for PBXProject "uKeyboard1" */;
@@ -223,6 +290,7 @@
 				0DFFF4151DF06E5800670F2B /* uKeyboard1 */,
 				0DFFF4291DF06E5900670F2B /* uKeyboard1Tests */,
 				0DFFF4341DF06E5900670F2B /* uKeyboard1UITests */,
+				0DFFF44A1DF06EB900670F2B /* uKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +314,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0DFFF4331DF06E5900670F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFFF4491DF06EB900670F2B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DFFF4471DF06EB900670F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFFF44E1DF06EBA00670F2B /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +375,11 @@
 			isa = PBXTargetDependency;
 			target = 0DFFF4151DF06E5800670F2B /* uKeyboard1 */;
 			targetProxy = 0DFFF4361DF06E5900670F2B /* PBXContainerItemProxy */;
+		};
+		0DFFF4511DF06EBA00670F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DFFF44A1DF06EB900670F2B /* uKeyboard */;
+			targetProxy = 0DFFF4501DF06EBA00670F2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +497,7 @@
 		0DFFF43F1DF06E5900670F2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -421,6 +510,7 @@
 		0DFFF4401DF06E5900670F2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -484,6 +574,30 @@
 			};
 			name = Release;
 		};
+		0DFFF4541DF06EBA00670F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = uKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0DFFF4551DF06EBA00670F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = uKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +631,14 @@
 			buildConfigurations = (
 				0DFFF4451DF06E5900670F2B /* Debug */,
 				0DFFF4461DF06E5900670F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DFFF4531DF06EBA00670F2B /* Build configuration list for PBXNativeTarget "uKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DFFF4541DF06EBA00670F2B /* Debug */,
+				0DFFF4551DF06EBA00670F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
