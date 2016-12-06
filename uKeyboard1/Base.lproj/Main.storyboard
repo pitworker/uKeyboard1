@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,10 +27,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-0d-Hd9">
+                                <rect key="frame" x="172" y="497" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="A"/>
+                                <connections>
+                                    <segue destination="5ES-JS-OHk" kind="showDetail" id="P8p-m0-yTg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="muw-dA-DCd" secondAttribute="trailing" constant="64" id="7zj-et-oly"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JVn-0d-Hd9" secondAttribute="bottom" constant="140" id="99Q-gt-kvL"/>
+                            <constraint firstItem="JVn-0d-Hd9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JWD-KY-Jwf"/>
                             <constraint firstItem="muw-dA-DCd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="LtC-zk-h4u"/>
                             <constraint firstItem="muw-dA-DCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64" id="OxE-Q0-aM9"/>
                             <constraint firstItem="muw-dA-DCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vzg-Dk-nsS"/>
@@ -39,6 +49,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k1M-1A-aRS">
+            <objects>
+                <viewController id="5ES-JS-OHk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEg-Yg-vbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="o7u-C9-cGA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ah8-oe-x2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S79-gs-KZC">
+                                <rect key="frame" x="170" y="515" width="35" height="30"/>
+                                <state key="normal" title="Okay"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="zi3-ba-DiZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o7u-C9-cGA" firstAttribute="top" secondItem="S79-gs-KZC" secondAttribute="bottom" constant="122" id="EoX-L3-1fa"/>
+                            <constraint firstItem="S79-gs-KZC" firstAttribute="centerX" secondItem="ah8-oe-x2m" secondAttribute="centerX" id="rZl-Mj-ig6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wl-4f-HMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="139"/>
         </scene>
     </scenes>
 </document>
