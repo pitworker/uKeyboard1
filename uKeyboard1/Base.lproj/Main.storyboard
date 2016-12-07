@@ -543,8 +543,8 @@
     </scenes>
     <resources>
         <image name="emojis" width="508" height="953"/>
-        <image name="tabHome" width="15" height="15"/>
-        <image name="tabSetting" width="15" height="15"/>
+        <image name="tabHome" width="30" height="30"/>
+        <image name="tabSetting" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sWP-Tb-Jjz"/>
