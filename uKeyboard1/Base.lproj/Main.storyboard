@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH7-zg-uxh">
-                                <rect key="frame" x="123" y="312" width="128" height="42"/>
+                                <rect key="frame" x="123.5" y="312" width="127.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,7 +39,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="2WL-iJ-N5Y"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="7Le-Sx-0Kt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9O-H6-NOt" userLabel="Key4B">
@@ -49,7 +50,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="uiK-BC-cbX"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="JUU-hM-21V"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXe-6C-CLb" userLabel="Key4C">
@@ -60,7 +61,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="kCl-7F-VAl"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="0XC-a5-z8Z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-od-P5U" userLabel="Key4D">
@@ -71,7 +72,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="RTJ-Nu-kh6"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="E8c-yL-fA3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-iv-Nxi" userLabel="Key4E">
@@ -82,7 +83,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="Zjl-sW-ScZ"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="0Q7-Kb-meu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-dB-Ilj" userLabel="Key4F">
@@ -93,7 +94,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="V0o-TG-Ox7"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="bN5-kb-gyM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72H-fP-KGA" userLabel="Key4G">
@@ -104,7 +105,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="uo6-bc-lf1"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="zr9-BE-XrS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIJ-qh-ANX" userLabel="Key4H">
@@ -115,7 +116,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="DRg-x3-wrh"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Apy-qY-Db9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Equ-Z6-5tp" userLabel="Key4I">
@@ -126,7 +127,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="mvj-KA-Zq8"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Qfu-em-Q4b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-JC-N3t" userLabel="Key4J">
@@ -137,7 +138,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="9Ht-3S-BOb"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="FMh-Cs-pl1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -153,7 +154,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="ZgL-KA-B5z"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="A0K-81-yvb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-UY-Hqc" userLabel="Key3B">
@@ -164,7 +165,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="ceV-Ja-sLb"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="uvN-nC-FZb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-Dm-umr" userLabel="Key3C">
@@ -175,7 +176,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="Ma6-6C-i74"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="hq5-yR-M98"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-3i-AJv" userLabel="Key3D">
@@ -186,7 +187,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="hgZ-nL-2ZM"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="aKF-6L-eXD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-Mk-E1A" userLabel="Key3E">
@@ -197,7 +198,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="Gki-EI-Fxc"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="h7N-5h-qME"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-DU-FjB" userLabel="Key3F">
@@ -208,7 +209,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="kYe-aJ-ter"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="27r-KD-EP8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-ME-VPo" userLabel="Key3G">
@@ -219,7 +220,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="fXK-TQ-QO4"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="oHz-yb-ImH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-Z8-Lhc" userLabel="Key3H">
@@ -230,7 +231,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="FTW-m8-osm"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="ppS-kI-pg2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-JL-JBx" userLabel="Key3I">
@@ -241,7 +242,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="TjS-Mu-b7j"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="QXp-mX-74m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZV-fR-zsm" userLabel="Key3J">
@@ -252,7 +253,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="Gd7-mp-95i"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="oMK-an-BV5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -268,7 +269,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="fvv-zp-0gn"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="sXq-UF-JEY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euw-1L-0UX" userLabel="Key2B">
@@ -279,7 +280,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="OfA-D7-2XC"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="JCP-6X-KfP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6t-0O-KD5" userLabel="Key2C">
@@ -290,7 +291,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="rX7-Ot-lQ3"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="ogh-LT-srz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFL-3g-m3Q" userLabel="Key2D">
@@ -301,7 +302,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="TW2-RG-pXI"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="ol1-qT-02F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR8-km-JLM" userLabel="Key2E">
@@ -312,7 +313,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="IHJ-dJ-IeO"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="eSF-NZ-8us"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-i3-o2M" userLabel="Key2F">
@@ -323,7 +324,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="3dT-yd-feh"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Mik-P5-s5L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFV-k5-xlY" userLabel="Key2G">
@@ -334,7 +335,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="ZqR-DK-Dfi"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="pYb-TN-kcY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bk-17-ktD" userLabel="Key2H">
@@ -345,7 +346,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="Crm-Iu-how"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="iTe-03-XQh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zco-ht-ahK" userLabel="Key2I">
@@ -356,7 +357,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="EJE-2K-zNm"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="UFh-LI-70r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-l4-cIV" userLabel="Key2J">
@@ -367,7 +368,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="ZQo-8u-Xt1"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="SCF-EQ-db8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -383,7 +384,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="qxc-4X-7Ko"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="GbC-H9-hf4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X2-ej-7Nq" userLabel="Key1B">
@@ -394,7 +395,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="80f-Zz-mgo"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Hc6-q7-2Ct"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFb-Ix-xSP" userLabel="Key1C">
@@ -405,7 +406,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="dtq-AL-59o"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Iai-Wx-Q10"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpc-0S-4gj" userLabel="Key1D">
@@ -416,7 +417,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="sWP-Tb-Jjz"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Fzj-UV-Ldx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-gZ-1gW" userLabel="Key1E">
@@ -427,7 +428,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="dcg-WC-f0l"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="TI2-MP-8xI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axk-lD-hhl" userLabel="Key1F">
@@ -438,7 +439,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="YHX-UG-B3G"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="VOG-JR-nyf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o4-Bk-Dev" userLabel="Key1G">
@@ -449,7 +450,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="YnS-Iq-HBb" kind="show" id="WPm-d4-Otr"/>
+                                            <segue destination="b09-Yh-yZO" kind="show" id="Tt5-5S-g09"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -549,35 +550,47 @@
             <point key="canvasLocation" x="1829.5999999999999" y="428.63568215892059"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="lmQ-bU-3t4">
+        <scene sceneID="ejh-e1-ObU">
             <objects>
-                <viewController id="YnS-Iq-HBb" customClass="ViewController" customModule="uKeyboard1" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="n50-hM-u9l"/>
-                        <viewControllerLayoutGuide type="bottom" id="F2V-IR-QYS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D4o-BK-1sO">
+                <tableViewController id="b09-Yh-yZO" customClass="ViewController" customModule="uKeyboard1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bVJ-aM-cAU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojis" translatesAutoresizingMaskIntoConstraints="NO" id="5He-bF-MQc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5He-bF-MQc" secondAttribute="trailing" id="8aG-Oy-ZzQ"/>
-                            <constraint firstItem="F2V-IR-QYS" firstAttribute="top" secondItem="5He-bF-MQc" secondAttribute="bottom" id="9a0-1X-peD"/>
-                            <constraint firstItem="5He-bF-MQc" firstAttribute="top" secondItem="n50-hM-u9l" secondAttribute="bottom" id="Arj-gg-cRX"/>
-                            <constraint firstItem="5He-bF-MQc" firstAttribute="leading" secondItem="D4o-BK-1sO" secondAttribute="leading" id="XPf-WO-OMe"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AfZ-aU-821" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vcv-Fr-7m5" customClass="CategoryTableViewCell" customModule="uKeyboard1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcv-Fr-7m5" id="3SI-8L-TxS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bp-PU-tsH">
+                                            <rect key="frame" x="23" y="11" width="14" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3Bp-PU-tsH" firstAttribute="leading" secondItem="3SI-8L-TxS" secondAttribute="leadingMargin" constant="15" id="d7K-cm-6x6"/>
+                                        <constraint firstItem="3Bp-PU-tsH" firstAttribute="centerY" secondItem="3SI-8L-TxS" secondAttribute="centerY" id="xpk-7D-fpA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="characterType" destination="3Bp-PU-tsH" id="rZt-br-o4u"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b09-Yh-yZO" id="X9H-NE-bym"/>
+                            <outlet property="delegate" destination="b09-Yh-yZO" id="OpL-it-TO0"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMt-jm-rYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="429"/>
+            <point key="canvasLocation" x="2844" y="429"/>
         </scene>
         <!--Home-->
         <scene sceneID="7Fy-02-Ssw">
@@ -649,11 +662,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="emojis" width="508" height="953"/>
         <image name="tabHome" width="30" height="30"/>
         <image name="tabSetting" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Ht-3S-BOb"/>
+        <segue reference="zr9-BE-XrS"/>
     </inferredMetricsTieBreakers>
 </document>
