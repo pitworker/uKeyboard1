@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var types = [String]()
 
+    @IBOutlet weak var senderName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         types = ["Latin Characters", "Arabic Numbers", "Punctuations", "Emojis", "Other Characters"]
+        self.senderName.text = senderKey
     }
 
     override func didReceiveMemoryWarning() {

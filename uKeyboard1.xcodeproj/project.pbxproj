@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D46752C1DFEF72500F5AD62 /* SenderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */; };
 		0DFFF41A1DF06E5900670F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF4191DF06E5900670F2B /* AppDelegate.swift */; };
 		0DFFF41C1DF06E5900670F2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF41B1DF06E5900670F2B /* ViewController.swift */; };
 		0DFFF41F1DF06E5900670F2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFFF41D1DF06E5900670F2B /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderKeys.swift; sourceTree = "<group>"; };
 		0DFFF4161DF06E5900670F2B /* uKeyboard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uKeyboard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF4191DF06E5900670F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFFF41B1DF06E5900670F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				0DFFF41B1DF06E5900670F2B /* ViewController.swift */,
 				2BC27CE01DFAF3B500D5FF64 /* CategoryTableViewCell.swift */,
 				0DFFF41D1DF06E5900670F2B /* Main.storyboard */,
+				0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */,
 				0DFFF4201DF06E5900670F2B /* Assets.xcassets */,
 				0DFFF4221DF06E5900670F2B /* LaunchScreen.storyboard */,
 				0DFFF4251DF06E5900670F2B /* Info.plist */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D46752C1DFEF72500F5AD62 /* SenderKeys.swift in Sources */,
 				2BC27CE11DFAF3B500D5FF64 /* CategoryTableViewCell.swift in Sources */,
 				2B965E9F1DF6FE0000C24A81 /* SecondViewController.swift in Sources */,
 				2B965E9D1DF6FDCC00C24A81 /* FirstViewController.swift in Sources */,
