@@ -7,4 +7,5 @@
 //
 
 import Foundation
+let keyPrefs = UserDefaults.standard
 var senderKey = ""
