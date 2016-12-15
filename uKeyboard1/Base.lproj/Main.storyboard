@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH7-zg-uxh">
-                                <rect key="frame" x="123.5" y="312" width="127.5" height="42"/>
+                                <rect key="frame" x="124" y="312.5" width="127.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MRC-Hv-BxH" userLabel="Fourth Row">
-                                <rect key="frame" x="20" y="416" width="336" height="30"/>
+                                <rect key="frame" x="19.5" y="416" width="336" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caL-37-TxC" userLabel="Key4A">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -40,7 +40,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4ASender:" destination="nRo-up-ux8" eventType="touchUpInside" id="OFg-qs-VSM"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="7Le-Sx-0Kt"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="1Oy-9G-S3O"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9O-H6-NOt" userLabel="Key4B">
@@ -52,7 +52,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4BSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="vfu-UJ-jaq"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="JUU-hM-21V"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="D8K-K8-bRb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXe-6C-CLb" userLabel="Key4C">
@@ -64,7 +64,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4CSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="Cql-AL-0t8"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="0XC-a5-z8Z"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="aWq-rx-3sm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-od-P5U" userLabel="Key4D">
@@ -76,7 +76,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4DSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="hw0-Md-CJ5"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="E8c-yL-fA3"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="3f1-i7-uva"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-iv-Nxi" userLabel="Key4E">
@@ -88,7 +88,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4ESender:" destination="nRo-up-ux8" eventType="touchUpInside" id="7ul-My-b9p"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="0Q7-Kb-meu"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="HJR-Zj-sN9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-dB-Ilj" userLabel="Key4F">
@@ -100,7 +100,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4FSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="cCy-PK-cGO"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="bN5-kb-gyM"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="iG0-EZ-Loc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72H-fP-KGA" userLabel="Key4G">
@@ -112,7 +112,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4GSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="ppS-MG-h6D"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="zr9-BE-XrS"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="0cZ-Wn-Jvv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIJ-qh-ANX" userLabel="Key4H">
@@ -124,7 +124,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4HSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="YBh-Bz-veB"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Apy-qY-Db9"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="5PE-cY-m4T"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Equ-Z6-5tp" userLabel="Key4I">
@@ -136,7 +136,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key4ISender:" destination="nRo-up-ux8" eventType="touchUpInside" id="jSJ-rg-nZs"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Qfu-em-Q4b"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="Xyx-69-Jak"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-JC-N3t" userLabel="Key4J">
@@ -148,13 +148,13 @@
                                         </state>
                                         <connections>
                                             <action selector="key4JSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="sTY-R6-G9V"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="FMh-Cs-pl1"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="2Gv-Wo-wi1"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-vJ-zzn" userLabel="Third Row">
-                                <rect key="frame" x="19" y="456" width="336" height="30"/>
+                                <rect key="frame" x="19.5" y="456" width="336" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-5W-9ge" userLabel="Key3A">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -165,7 +165,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3ASender:" destination="nRo-up-ux8" eventType="touchUpInside" id="bYj-7n-Jhc"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="A0K-81-yvb"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="ykR-Xg-JRg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-UY-Hqc" userLabel="Key3B">
@@ -177,7 +177,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3BSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="h8q-0I-NF9"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="uvN-nC-FZb"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="EuF-H0-67N"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-Dm-umr" userLabel="Key3C">
@@ -189,7 +189,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3CSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="wWi-nE-aDy"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="hq5-yR-M98"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="fcH-RX-YEI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-3i-AJv" userLabel="Key3D">
@@ -201,7 +201,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3DSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="o4X-xC-7C1"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="aKF-6L-eXD"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="ZA2-s2-EcJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-Mk-E1A" userLabel="Key3E">
@@ -213,7 +213,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3ESender:" destination="nRo-up-ux8" eventType="touchUpInside" id="9St-fn-gGS"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="h7N-5h-qME"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="I6s-OD-8iy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-DU-FjB" userLabel="Key3F">
@@ -225,7 +225,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3FSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="W0S-AX-wNO"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="27r-KD-EP8"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="iew-aE-fra"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-ME-VPo" userLabel="Key3G">
@@ -237,7 +237,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3GSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="QyG-zy-ank"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="oHz-yb-ImH"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="400-qI-v8o"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-Z8-Lhc" userLabel="Key3H">
@@ -249,7 +249,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3HSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="sga-Xn-wvy"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="ppS-kI-pg2"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="pcg-Np-4KA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-JL-JBx" userLabel="Key3I">
@@ -261,7 +261,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key3ISender:" destination="nRo-up-ux8" eventType="touchUpInside" id="5br-UF-p9X"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="QXp-mX-74m"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="toW-or-Xfd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZV-fR-zsm" userLabel="Key3J">
@@ -273,13 +273,13 @@
                                         </state>
                                         <connections>
                                             <action selector="key3JSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="voN-h4-AKI"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="oMK-an-BV5"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="fPC-Hc-rje"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-J0-yoH">
-                                <rect key="frame" x="19" y="496" width="336" height="30"/>
+                                <rect key="frame" x="19.5" y="496" width="336" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-Bh-kuV" userLabel="Key2A">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -290,7 +290,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2ASender:" destination="nRo-up-ux8" eventType="touchUpInside" id="731-Ez-Bxp"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="sXq-UF-JEY"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="M1R-fq-xZ9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euw-1L-0UX" userLabel="Key2B">
@@ -302,7 +302,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2BSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="tEe-Nm-y1d"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="JCP-6X-KfP"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="6Mr-VA-qej"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6t-0O-KD5" userLabel="Key2C">
@@ -314,7 +314,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2CSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="lGw-Wl-XgI"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="ogh-LT-srz"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="egn-QL-sLp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFL-3g-m3Q" userLabel="Key2D">
@@ -326,7 +326,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2DSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="nsv-TG-6pX"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="ol1-qT-02F"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="Dmm-vL-Vwt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR8-km-JLM" userLabel="Key2E">
@@ -338,7 +338,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2ESender:" destination="nRo-up-ux8" eventType="touchUpInside" id="iIC-Rg-Laz"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="eSF-NZ-8us"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="N6i-7F-OIN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-i3-o2M" userLabel="Key2F">
@@ -350,7 +350,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2FSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="EA0-Tz-LW0"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Mik-P5-s5L"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="m6E-Ja-B1v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFV-k5-xlY" userLabel="Key2G">
@@ -362,7 +362,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2GSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="WuR-c6-6ld"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="pYb-TN-kcY"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="l8z-6g-IJg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bk-17-ktD" userLabel="Key2H">
@@ -374,7 +374,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2HSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="GTF-Uf-NQG"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="iTe-03-XQh"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="qQt-89-Nb0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zco-ht-ahK" userLabel="Key2I">
@@ -386,7 +386,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key2ISender:" destination="nRo-up-ux8" eventType="touchUpInside" id="5tM-yS-sOw"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="UFh-LI-70r"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="eZS-yQ-qYr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-l4-cIV" userLabel="Key2J">
@@ -398,13 +398,13 @@
                                         </state>
                                         <connections>
                                             <action selector="key2JSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="2db-uN-tc7"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="SCF-EQ-db8"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="k9X-fB-tZa"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lOL-PO-btY" userLabel="First Row">
-                                <rect key="frame" x="70" y="536" width="234" height="30"/>
+                                <rect key="frame" x="70.5" y="536" width="234" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-Os-OhN" userLabel="Key1A">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -415,7 +415,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1ASender:" destination="nRo-up-ux8" eventType="touchUpInside" id="Wja-QE-O32"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="GbC-H9-hf4"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="NLa-jl-2jB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X2-ej-7Nq" userLabel="Key1B">
@@ -427,7 +427,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1BSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="0g1-9Z-hBL"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Hc6-q7-2Ct"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="YGB-eD-qv4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFb-Ix-xSP" userLabel="Key1C">
@@ -439,7 +439,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1CSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="gIF-6p-dIN"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Iai-Wx-Q10"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="9GF-zY-bzP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpc-0S-4gj" userLabel="Key1D">
@@ -451,7 +451,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1DSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="YjX-yY-eLK"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Fzj-UV-Ldx"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="p1g-OK-e2L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-gZ-1gW" userLabel="Key1E">
@@ -463,7 +463,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1ESender:" destination="nRo-up-ux8" eventType="touchUpInside" id="Hfw-D0-Qob"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="TI2-MP-8xI"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="WXV-v6-EDm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axk-lD-hhl" userLabel="Key1F">
@@ -475,7 +475,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1FSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="tz9-vR-XJ1"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="VOG-JR-nyf"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="nIA-nf-BaN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o4-Bk-Dev" userLabel="Key1G">
@@ -487,7 +487,7 @@
                                         </state>
                                         <connections>
                                             <action selector="key1GSender:" destination="nRo-up-ux8" eventType="touchUpInside" id="9L7-FL-BrY"/>
-                                            <segue destination="b09-Yh-yZO" kind="show" id="Tt5-5S-g09"/>
+                                            <segue destination="r1i-we-VKN" kind="show" id="dYT-RN-ceV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -509,7 +509,7 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DGp-vn-iRi" userLabel="Zero Row">
-                                <rect key="frame" x="18" y="576" width="340" height="30"/>
+                                <rect key="frame" x="17.5" y="576" width="340" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-nv-GXa">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -624,57 +624,117 @@
             <point key="canvasLocation" x="1829.5999999999999" y="428.63568215892059"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="ejh-e1-ObU">
+        <scene sceneID="1Go-qN-SfA">
             <objects>
-                <tableViewController id="b09-Yh-yZO" customClass="ViewController" customModule="uKeyboard1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bVJ-aM-cAU">
+                <viewController id="r1i-we-VKN" customClass="ViewController" customModule="uKeyboard1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Zq-zE-S15"/>
+                        <viewControllerLayoutGuide type="bottom" id="o4Y-9h-YF9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLp-Ae-dBg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drX-lp-Qj1" userLabel="SenderName">
-                            <rect key="frame" x="0.0" y="136" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vcv-Fr-7m5" customClass="CategoryTableViewCell" customModule="uKeyboard1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcv-Fr-7m5" id="3SI-8L-TxS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bp-PU-tsH">
-                                            <rect key="frame" x="23" y="11" width="14" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="3Bp-PU-tsH" firstAttribute="leading" secondItem="3SI-8L-TxS" secondAttribute="leadingMargin" constant="15" id="d7K-cm-6x6"/>
-                                        <constraint firstItem="3Bp-PU-tsH" firstAttribute="centerY" secondItem="3SI-8L-TxS" secondAttribute="centerY" id="xpk-7D-fpA"/>
-                                    </constraints>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuQ-na-psy">
+                                <rect key="frame" x="74" y="295" width="228" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-aB-iyh">
+                                <rect key="frame" x="175" y="64" width="200" height="559"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1x-j4-nVM">
+                                        <rect key="frame" x="0.0" y="64" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Latin Characters">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKF-Ze-iLe">
+                                        <rect key="frame" x="0.0" y="114" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Arabic Numbers">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nna-Oy-9VE">
+                                        <rect key="frame" x="0.0" y="164" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Punctuations">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPs-up-O9F">
+                                        <rect key="frame" x="0.0" y="214" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Emojis">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-98-LP0">
+                                        <rect key="frame" x="0.0" y="264" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Other Characters">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38750121225538653" green="0.67121592987372458" blue="0.7534501903553299" alpha="0.87566887842465757" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XKF-Ze-iLe" firstAttribute="centerX" secondItem="XTM-aB-iyh" secondAttribute="centerX" id="47I-TY-akr"/>
+                                    <constraint firstAttribute="trailing" secondItem="sPs-up-O9F" secondAttribute="trailing" id="8jr-fn-2DH"/>
+                                    <constraint firstItem="N1x-j4-nVM" firstAttribute="leading" secondItem="XTM-aB-iyh" secondAttribute="leading" id="Ijg-4U-cra"/>
+                                    <constraint firstItem="2Kl-98-LP0" firstAttribute="centerX" secondItem="XTM-aB-iyh" secondAttribute="centerX" id="OBt-KO-Ndc"/>
+                                    <constraint firstItem="N1x-j4-nVM" firstAttribute="centerX" secondItem="XTM-aB-iyh" secondAttribute="centerX" id="OoQ-6B-PaZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Kl-98-LP0" secondAttribute="trailing" id="PvF-Mg-PrP"/>
+                                    <constraint firstItem="N1x-j4-nVM" firstAttribute="top" secondItem="XTM-aB-iyh" secondAttribute="top" constant="64" id="QQw-96-9Jv"/>
+                                    <constraint firstItem="2Kl-98-LP0" firstAttribute="top" secondItem="sPs-up-O9F" secondAttribute="bottom" constant="16" id="V8o-ut-vdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="N1x-j4-nVM" secondAttribute="trailing" id="Vc7-dg-meu"/>
+                                    <constraint firstItem="Nna-Oy-9VE" firstAttribute="centerX" secondItem="XTM-aB-iyh" secondAttribute="centerX" id="Vu0-4W-fvK"/>
+                                    <constraint firstItem="sPs-up-O9F" firstAttribute="leading" secondItem="XTM-aB-iyh" secondAttribute="leading" id="Wl1-Rs-kyB"/>
+                                    <constraint firstItem="XKF-Ze-iLe" firstAttribute="top" secondItem="N1x-j4-nVM" secondAttribute="bottom" constant="16" id="bPf-y1-sPZ"/>
+                                    <constraint firstItem="sPs-up-O9F" firstAttribute="centerX" secondItem="XTM-aB-iyh" secondAttribute="centerX" id="cXT-ww-QOY"/>
+                                    <constraint firstItem="Nna-Oy-9VE" firstAttribute="top" secondItem="XKF-Ze-iLe" secondAttribute="bottom" constant="16" id="dL3-6u-94M"/>
+                                    <constraint firstAttribute="width" constant="200" id="fEI-gN-xF5"/>
+                                    <constraint firstItem="2Kl-98-LP0" firstAttribute="leading" secondItem="XTM-aB-iyh" secondAttribute="leading" id="gIR-NN-Id3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nna-Oy-9VE" secondAttribute="trailing" id="mOF-nr-cIN"/>
+                                    <constraint firstItem="Nna-Oy-9VE" firstAttribute="leading" secondItem="XTM-aB-iyh" secondAttribute="leading" id="mUg-qD-OVH"/>
+                                    <constraint firstItem="XKF-Ze-iLe" firstAttribute="leading" secondItem="XTM-aB-iyh" secondAttribute="leading" id="pgz-bO-emw"/>
+                                    <constraint firstAttribute="trailing" secondItem="XKF-Ze-iLe" secondAttribute="trailing" id="rJf-FJ-xM4"/>
+                                    <constraint firstItem="sPs-up-O9F" firstAttribute="top" secondItem="Nna-Oy-9VE" secondAttribute="bottom" constant="16" id="tZD-LB-Zuy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbm-Ly-GWI">
+                                <rect key="frame" x="16" y="72" width="36" height="30"/>
+                                <state key="normal" title="More"/>
                                 <connections>
-                                    <outlet property="characterType" destination="3Bp-PU-tsH" id="rZt-br-o4u"/>
+                                    <action selector="expandMenu:" destination="r1i-we-VKN" eventType="touchUpInside" id="ny4-Qr-EhL"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="b09-Yh-yZO" id="X9H-NE-bym"/>
-                            <outlet property="delegate" destination="b09-Yh-yZO" id="OpL-it-TO0"/>
-                        </connections>
-                    </tableView>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o4Y-9h-YF9" firstAttribute="top" secondItem="XTM-aB-iyh" secondAttribute="bottom" id="4jf-Po-Eoa"/>
+                            <constraint firstItem="Gbm-Ly-GWI" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" constant="8" id="91I-L6-PwX"/>
+                            <constraint firstItem="o4Y-9h-YF9" firstAttribute="top" secondItem="Gbm-Ly-GWI" secondAttribute="bottom" constant="521" id="AzC-Jg-616"/>
+                            <constraint firstItem="PuQ-na-psy" firstAttribute="centerX" secondItem="cLp-Ae-dBg" secondAttribute="centerX" id="FPW-cF-8zx"/>
+                            <constraint firstAttribute="trailing" secondItem="Gbm-Ly-GWI" secondAttribute="trailing" constant="323" id="JUE-ex-NVW"/>
+                            <constraint firstItem="XTM-aB-iyh" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" id="Z8J-Un-ZjQ"/>
+                            <constraint firstItem="Gbm-Ly-GWI" firstAttribute="leading" secondItem="cLp-Ae-dBg" secondAttribute="leadingMargin" id="cQg-ts-aG3"/>
+                            <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" id="qRw-sZ-6ny"/>
+                            <constraint firstItem="PuQ-na-psy" firstAttribute="centerY" secondItem="cLp-Ae-dBg" secondAttribute="centerY" constant="-18" id="set-yQ-I3e"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="senderName" destination="drX-lp-Qj1" id="AA7-d5-dzZ"/>
+                        <outlet property="trailing" destination="qRw-sZ-6ny" id="lPE-Y3-nWa"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uMt-jm-rYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uzt-TY-c8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2844" y="429"/>
+            <point key="canvasLocation" x="2685.5999999999999" y="428.63568215892059"/>
         </scene>
         <!--Home-->
         <scene sceneID="7Fy-02-Ssw">
@@ -689,7 +749,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dt-su-oiL">
-                                <rect key="frame" x="99" y="312" width="177" height="42"/>
+                                <rect key="frame" x="99" y="312.5" width="177" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -750,6 +810,6 @@
         <image name="tabSetting" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zr9-BE-XrS"/>
+        <segue reference="ykR-Xg-JRg"/>
     </inferredMetricsTieBreakers>
 </document>
