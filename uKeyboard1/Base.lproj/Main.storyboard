@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l6C-wj-tpA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -642,7 +642,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-aB-iyh">
-                                <rect key="frame" x="175" y="64" width="200" height="559"/>
+                                <rect key="frame" x="375" y="64" width="200" height="559"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1x-j4-nVM">
                                         <rect key="frame" x="0.0" y="64" width="200" height="34"/>
@@ -722,7 +722,7 @@
                             <constraint firstAttribute="trailing" secondItem="Gbm-Ly-GWI" secondAttribute="trailing" constant="323" id="JUE-ex-NVW"/>
                             <constraint firstItem="XTM-aB-iyh" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" id="Z8J-Un-ZjQ"/>
                             <constraint firstItem="Gbm-Ly-GWI" firstAttribute="leading" secondItem="cLp-Ae-dBg" secondAttribute="leadingMargin" id="cQg-ts-aG3"/>
-                            <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" id="qRw-sZ-6ny"/>
+                            <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" constant="-200" id="qRw-sZ-6ny"/>
                             <constraint firstItem="PuQ-na-psy" firstAttribute="centerY" secondItem="cLp-Ae-dBg" secondAttribute="centerY" constant="-18" id="set-yQ-I3e"/>
                         </constraints>
                     </view>
