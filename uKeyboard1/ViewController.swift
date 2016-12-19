@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     
     @IBAction func expandMenu(_ sender: Any) {
         if (menuShowing){
-            trailing.constant = -200
+            trailing.constant = 0
         }
         else{
-            trailing.constant = 0
+            trailing.constant = -200
         }
         menuShowing = !menuShowing 
     }

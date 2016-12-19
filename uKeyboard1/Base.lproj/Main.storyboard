@@ -642,7 +642,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-aB-iyh">
-                                <rect key="frame" x="375" y="64" width="200" height="559"/>
+                                <rect key="frame" x="175" y="64" width="200" height="559"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1x-j4-nVM">
                                         <rect key="frame" x="0.0" y="64" width="200" height="34"/>
@@ -722,7 +722,7 @@
                             <constraint firstAttribute="trailing" secondItem="Gbm-Ly-GWI" secondAttribute="trailing" constant="323" id="JUE-ex-NVW"/>
                             <constraint firstItem="XTM-aB-iyh" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" id="Z8J-Un-ZjQ"/>
                             <constraint firstItem="Gbm-Ly-GWI" firstAttribute="leading" secondItem="cLp-Ae-dBg" secondAttribute="leadingMargin" id="cQg-ts-aG3"/>
-                            <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" constant="-200" id="qRw-sZ-6ny"/>
+                            <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" id="qRw-sZ-6ny"/>
                             <constraint firstItem="PuQ-na-psy" firstAttribute="centerY" secondItem="cLp-Ae-dBg" secondAttribute="centerY" constant="-18" id="set-yQ-I3e"/>
                         </constraints>
                     </view>
