@@ -160,7 +160,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.64836210055057175" green="0.67788617227979275" blue="0.56459046863931162" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                        <state key="normal" title="W">
+                                        <state key="normal" title="Q">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -172,7 +172,7 @@
                                         <rect key="frame" x="34" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.64836210055057175" green="0.67788617227979275" blue="0.56459046863931162" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                        <state key="normal" title="Q">
+                                        <state key="normal" title="W">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>

@@ -17,7 +17,7 @@
 		0DFFF43A1DF06E5900670F2B /* uKeyboard1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF4391DF06E5900670F2B /* uKeyboard1UITests.swift */; };
 		0DFFF44E1DF06EBA00670F2B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */; };
 		0DFFF4521DF06EBA00670F2B /* uKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2B8C22431DF7620E00473B1D /* keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C22421DF7620E00473B1D /* keyboard.xib */; };
+		2B81A79A1E1E96A800A9BB8A /* testerKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */; };
 		2B965E9D1DF6FDCC00C24A81 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B965E9C1DF6FDCC00C24A81 /* FirstViewController.swift */; };
 		2B965E9F1DF6FE0000C24A81 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B965E9E1DF6FE0000C24A81 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,7 +78,7 @@
 		0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = uKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0DFFF44F1DF06EBA00670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B8C22421DF7620E00473B1D /* keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = keyboard.xib; sourceTree = "<group>"; };
+		2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testerKeyboard.xib; sourceTree = "<group>"; };
 		2B965E9C1DF6FDCC00C24A81 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		2B965E9E1DF6FE0000C24A81 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */,
+				2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */,
 				0DFFF44F1DF06EBA00670F2B /* Info.plist */,
-				2B8C22421DF7620E00473B1D /* keyboard.xib */,
 			);
 			path = uKeyboard;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 		0DFFF40E1DF06E5800670F2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = uKeyboard;
 				TargetAttributes = {
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8C22431DF7620E00473B1D /* keyboard.xib in Resources */,
+				2B81A79A1E1E96A800A9BB8A /* testerKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
