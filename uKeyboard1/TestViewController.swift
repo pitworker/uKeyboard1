@@ -9,20 +9,21 @@
 import UIKit
 
 class TestViewController: UIViewController {
-
-    @IBAction func character1(_ sender: Any) {
-        setKey(val: "A")
-    }
-    @IBAction func character2(_ sender: Any) {
-        setKey(val: "∆")
-    }
-    @IBAction func character3(_ sender: Any) {
-        setKey(val: "1")
+    
+    //@IBOutlet weak var buttonsAll: UIButton!
+    @IBOutlet var buttonsAll: [UIButton]!
+    
+    
+    @IBAction func anyButtonPressed(_ sender: UIButton) {
+        highlightButton(button: sender)
+        if let buttonVal = sender.titleLabel?.text {
+            setKey(val: buttonVal)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        highlightSelected()
         // Do any additional setup after loading the view.
     }
 
@@ -33,5 +34,30 @@ class TestViewController: UIViewController {
     
     func setKey(val: String) {
         keyPrefs.setValue(val, forKey: senderKey)
+    }
+    
+    func highlightSelected() {
+        let selectedChar = keyPrefs.string(forKey: senderKey)
+        
+        unhighlightAll()
+        
+        for eachButton in buttonsAll {
+            if let val = eachButton.titleLabel?.text {
+                if val == selectedChar {
+                    eachButton.backgroundColor = .lightGray
+                }
+            }
+        }
+    }
+    
+    func highlightButton(button: UIButton) {
+        unhighlightAll()
+        button.backgroundColor = .lightGray
+    }
+    
+    func unhighlightAll() {
+        for eachButton in buttonsAll {
+            eachButton.backgroundColor = .none
+        }
     }
 }
