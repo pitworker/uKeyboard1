@@ -63,9 +63,6 @@ class KeyboardViewController: UIInputViewController {
         super.updateViewConstraints()
         
         // Add custom view sizing constraints here
-        setKeyNames()
-        
-        setKeyTitles()
     }
     
     override func viewDidLoad() {
@@ -76,7 +73,9 @@ class KeyboardViewController: UIInputViewController {
         keyBoardView = keyBoardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.addSubview(keyBoardView)
         //
+        setKeyNames()
         
+        setKeyTitles()
     }
     
     override func didReceiveMemoryWarning() {

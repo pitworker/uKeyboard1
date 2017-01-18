@@ -11,6 +11,34 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="uKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="key1A" destination="uLS-6f-pms" id="m4H-NL-4u8"/>
+                <outlet property="key1B" destination="SLK-El-K11" id="gP0-vP-kIZ"/>
+                <outlet property="key1C" destination="u1U-9w-PGc" id="JHY-jd-P3A"/>
+                <outlet property="key1D" destination="vBq-hT-K82" id="dnh-Vs-Zbc"/>
+                <outlet property="key1E" destination="uYe-Cc-DjP" id="Ird-Hv-Tu5"/>
+                <outlet property="key1F" destination="Zdt-Sz-rzD" id="31d-nb-UGa"/>
+                <outlet property="key1G" destination="EJA-0n-2e0" id="M0j-vR-Om2"/>
+                <outlet property="key1H" destination="Oo4-XP-DyW" id="Rwf-L5-9HT"/>
+                <outlet property="key2A" destination="NeL-2D-dgX" id="hpT-eA-Q6y"/>
+                <outlet property="key2B" destination="s17-Ji-FmX" id="Njw-Zn-Mjd"/>
+                <outlet property="key2C" destination="ZdK-pg-6GJ" id="hBg-NB-PYi"/>
+                <outlet property="key2D" destination="xIA-xu-bWc" id="Sa9-BH-0IH"/>
+                <outlet property="key2E" destination="m0e-VB-Oh4" id="i3q-Dg-evM"/>
+                <outlet property="key2F" destination="zNW-rR-Ger" id="9N8-fW-xoM"/>
+                <outlet property="key2G" destination="U7D-Uq-owO" id="ced-ha-L2o"/>
+                <outlet property="key2H" destination="c2O-K3-HLs" id="Ojl-Vt-7O3"/>
+                <outlet property="key2I" destination="p4P-qW-kBX" id="ryS-BY-eej"/>
+                <outlet property="key2J" destination="0A4-R4-WPN" id="gHz-gn-fWh"/>
+                <outlet property="key3A" destination="UxB-Ue-C7S" id="7vv-Sc-jQd"/>
+                <outlet property="key3B" destination="m53-nn-d6R" id="D34-v3-akh"/>
+                <outlet property="key3C" destination="jOs-OS-CGt" id="E5m-Iz-UHp"/>
+                <outlet property="key3D" destination="AT9-xG-fDx" id="6hd-St-hf7"/>
+                <outlet property="key3E" destination="mre-MM-ybr" id="GSa-j9-h2B"/>
+                <outlet property="key3F" destination="fOt-hu-Mvj" id="Ynn-H8-kJN"/>
+                <outlet property="key3G" destination="Oaf-A6-2Yq" id="819-SR-5sZ"/>
+                <outlet property="key3H" destination="pdV-UW-ajS" id="I6x-1n-thY"/>
+                <outlet property="key3I" destination="3w3-LV-Snl" id="f14-q9-qsZ"/>
+                <outlet property="key3J" destination="Moj-aZ-DlE" id="Dlf-bE-doI"/>
                 <outlet property="key4A" destination="fyK-zD-pxc" id="kjj-gV-uCo"/>
                 <outlet property="key4B" destination="qoq-3u-ocH" id="YJd-72-8ex"/>
                 <outlet property="key4C" destination="hJv-zk-NFe" id="3xG-Km-Bdf"/>
@@ -31,6 +59,34 @@
                 <outletCollection property="allKeys" destination="mKC-uK-EWd" collectionClass="NSMutableArray" id="rJ7-jd-5pt"/>
                 <outletCollection property="allKeys" destination="tBI-Q2-qea" collectionClass="NSMutableArray" id="aof-zb-EkV"/>
                 <outletCollection property="allKeys" destination="CTW-0F-MQ6" collectionClass="NSMutableArray" id="g2P-GH-UCq"/>
+                <outletCollection property="allKeys" destination="UxB-Ue-C7S" collectionClass="NSMutableArray" id="aMJ-qH-25h"/>
+                <outletCollection property="allKeys" destination="m53-nn-d6R" collectionClass="NSMutableArray" id="vly-r0-mFQ"/>
+                <outletCollection property="allKeys" destination="jOs-OS-CGt" collectionClass="NSMutableArray" id="drZ-Cn-r70"/>
+                <outletCollection property="allKeys" destination="AT9-xG-fDx" collectionClass="NSMutableArray" id="egf-Px-00H"/>
+                <outletCollection property="allKeys" destination="mre-MM-ybr" collectionClass="NSMutableArray" id="8gI-Ap-rAh"/>
+                <outletCollection property="allKeys" destination="fOt-hu-Mvj" collectionClass="NSMutableArray" id="nhd-4S-JSq"/>
+                <outletCollection property="allKeys" destination="Oaf-A6-2Yq" collectionClass="NSMutableArray" id="VV4-3I-pUt"/>
+                <outletCollection property="allKeys" destination="pdV-UW-ajS" collectionClass="NSMutableArray" id="GUT-8M-TmB"/>
+                <outletCollection property="allKeys" destination="3w3-LV-Snl" collectionClass="NSMutableArray" id="rEm-c3-dzC"/>
+                <outletCollection property="allKeys" destination="Moj-aZ-DlE" collectionClass="NSMutableArray" id="FD3-1U-GKY"/>
+                <outletCollection property="allKeys" destination="NeL-2D-dgX" collectionClass="NSMutableArray" id="3kj-Te-GFS"/>
+                <outletCollection property="allKeys" destination="s17-Ji-FmX" collectionClass="NSMutableArray" id="Rwh-pV-V95"/>
+                <outletCollection property="allKeys" destination="ZdK-pg-6GJ" collectionClass="NSMutableArray" id="hpe-1P-gOW"/>
+                <outletCollection property="allKeys" destination="xIA-xu-bWc" collectionClass="NSMutableArray" id="VSJ-zH-ZVb"/>
+                <outletCollection property="allKeys" destination="m0e-VB-Oh4" collectionClass="NSMutableArray" id="t1a-sj-K3F"/>
+                <outletCollection property="allKeys" destination="zNW-rR-Ger" collectionClass="NSMutableArray" id="DUh-aY-czy"/>
+                <outletCollection property="allKeys" destination="U7D-Uq-owO" collectionClass="NSMutableArray" id="ZfV-1U-vUO"/>
+                <outletCollection property="allKeys" destination="c2O-K3-HLs" collectionClass="NSMutableArray" id="U0e-hs-huU"/>
+                <outletCollection property="allKeys" destination="p4P-qW-kBX" collectionClass="NSMutableArray" id="9m6-eg-bKC"/>
+                <outletCollection property="allKeys" destination="0A4-R4-WPN" collectionClass="NSMutableArray" id="uRL-mZ-neZ"/>
+                <outletCollection property="allKeys" destination="uLS-6f-pms" collectionClass="NSMutableArray" id="6Qm-ZR-FEV"/>
+                <outletCollection property="allKeys" destination="SLK-El-K11" collectionClass="NSMutableArray" id="mCV-l1-na7"/>
+                <outletCollection property="allKeys" destination="u1U-9w-PGc" collectionClass="NSMutableArray" id="syd-uA-WD4"/>
+                <outletCollection property="allKeys" destination="vBq-hT-K82" collectionClass="NSMutableArray" id="owp-G0-oJw"/>
+                <outletCollection property="allKeys" destination="uYe-Cc-DjP" collectionClass="NSMutableArray" id="uAb-QZ-Nx4"/>
+                <outletCollection property="allKeys" destination="Zdt-Sz-rzD" collectionClass="NSMutableArray" id="XUh-U9-dJZ"/>
+                <outletCollection property="allKeys" destination="EJA-0n-2e0" collectionClass="NSMutableArray" id="XBB-ZG-DmW"/>
+                <outletCollection property="allKeys" destination="Oo4-XP-DyW" collectionClass="NSMutableArray" id="lY9-WO-XUT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
