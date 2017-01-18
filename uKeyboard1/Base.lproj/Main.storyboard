@@ -632,17 +632,11 @@
                         <viewControllerLayoutGuide type="bottom" id="o4Y-9h-YF9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cLp-Ae-dBg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuQ-na-psy">
-                                <rect key="frame" x="74" y="295" width="228" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-aB-iyh">
-                                <rect key="frame" x="375" y="64" width="200" height="559"/>
+                                <rect key="frame" x="375" y="64" width="200" height="1092"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1x-j4-nVM">
                                         <rect key="frame" x="0.0" y="64" width="200" height="34"/>
@@ -712,22 +706,29 @@
                                     <action selector="expandMenu:" destination="r1i-we-VKN" eventType="touchUpInside" id="ny4-Qr-EhL"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pK3-3f-7Z7" userLabel="Selection View">
+                                <rect key="frame" x="0.0" y="110" width="375" height="1046"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o4Y-9h-YF9" firstAttribute="top" secondItem="XTM-aB-iyh" secondAttribute="bottom" id="4jf-Po-Eoa"/>
                             <constraint firstItem="Gbm-Ly-GWI" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" constant="8" id="91I-L6-PwX"/>
-                            <constraint firstItem="o4Y-9h-YF9" firstAttribute="top" secondItem="Gbm-Ly-GWI" secondAttribute="bottom" constant="521" id="AzC-Jg-616"/>
-                            <constraint firstItem="PuQ-na-psy" firstAttribute="centerX" secondItem="cLp-Ae-dBg" secondAttribute="centerX" id="FPW-cF-8zx"/>
+                            <constraint firstItem="pK3-3f-7Z7" firstAttribute="centerX" secondItem="cLp-Ae-dBg" secondAttribute="centerX" id="Euh-H7-271"/>
+                            <constraint firstItem="o4Y-9h-YF9" firstAttribute="top" secondItem="pK3-3f-7Z7" secondAttribute="bottom" id="F1l-VN-p73"/>
                             <constraint firstAttribute="trailing" secondItem="Gbm-Ly-GWI" secondAttribute="trailing" constant="323" id="JUE-ex-NVW"/>
                             <constraint firstItem="XTM-aB-iyh" firstAttribute="top" secondItem="8Zq-zE-S15" secondAttribute="bottom" id="Z8J-Un-ZjQ"/>
                             <constraint firstItem="Gbm-Ly-GWI" firstAttribute="leading" secondItem="cLp-Ae-dBg" secondAttribute="leadingMargin" id="cQg-ts-aG3"/>
+                            <constraint firstItem="pK3-3f-7Z7" firstAttribute="leading" secondItem="cLp-Ae-dBg" secondAttribute="leading" id="hz0-88-X6n"/>
+                            <constraint firstItem="pK3-3f-7Z7" firstAttribute="centerY" secondItem="cLp-Ae-dBg" secondAttribute="centerY" constant="33" id="p8I-K0-1ef"/>
                             <constraint firstAttribute="trailing" secondItem="XTM-aB-iyh" secondAttribute="trailing" constant="-200" id="qRw-sZ-6ny"/>
-                            <constraint firstItem="PuQ-na-psy" firstAttribute="centerY" secondItem="cLp-Ae-dBg" secondAttribute="centerY" constant="-18" id="set-yQ-I3e"/>
+                            <constraint firstItem="XTM-aB-iyh" firstAttribute="leading" secondItem="pK3-3f-7Z7" secondAttribute="trailing" id="vTc-q1-4hw"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
                     <connections>
                         <outlet property="trailing" destination="qRw-sZ-6ny" id="lPE-Y3-nWa"/>
                     </connections>
