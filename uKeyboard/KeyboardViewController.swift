@@ -22,11 +22,12 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
         
         // Perform custom UI setup here
-        let keyBoardNib = UINib(nibName: "testerKeyboard", bundle: nil)
+        let keyBoardNib = UINib(nibName: "KeyboardView", bundle: nil)
         keyBoardView = keyBoardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.addSubview(keyBoardView)
-        //
-        
+//        keyBoardView.frame.size.width = self.view.frame.size.width
+//        keyBoardView.frame.size.height = self.view.frame.size.height
+        print("\(view.frame.size.width)")
     }
     
     override func didReceiveMemoryWarning() {

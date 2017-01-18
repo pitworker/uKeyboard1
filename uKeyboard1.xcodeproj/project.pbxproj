@@ -17,7 +17,6 @@
 		0DFFF43A1DF06E5900670F2B /* uKeyboard1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF4391DF06E5900670F2B /* uKeyboard1UITests.swift */; };
 		0DFFF44E1DF06EBA00670F2B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */; };
 		0DFFF4521DF06EBA00670F2B /* uKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2B81A79A1E1E96A800A9BB8A /* testerKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */; };
 		2B965E9D1DF6FDCC00C24A81 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B965E9C1DF6FDCC00C24A81 /* FirstViewController.swift */; };
 		2B965E9F1DF6FE0000C24A81 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B965E9E1DF6FE0000C24A81 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		0DFFF44B1DF06EB900670F2B /* uKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = uKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0DFFF44F1DF06EBA00670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testerKeyboard.xib; sourceTree = "<group>"; };
 		2B965E9C1DF6FDCC00C24A81 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		2B965E9E1DF6FE0000C24A81 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */,
-				2B81A7991E1E96A800A9BB8A /* testerKeyboard.xib */,
 				0DFFF44F1DF06EBA00670F2B /* Info.plist */,
 			);
 			path = uKeyboard;
@@ -263,11 +260,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = uKeyboard;
 				TargetAttributes = {
 					0DFFF4151DF06E5800670F2B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46LJ7FTGEE;
 						ProvisioningStyle = Automatic;
 					};
 					0DFFF4291DF06E5900670F2B = {
@@ -282,6 +280,7 @@
 					};
 					0DFFF44A1DF06EB900670F2B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46LJ7FTGEE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -336,7 +335,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B81A79A1E1E96A800A9BB8A /* testerKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +435,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -459,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,6 +485,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -502,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -515,6 +515,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46LJ7FTGEE;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1;
@@ -528,6 +529,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46LJ7FTGEE;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1;
@@ -593,6 +595,7 @@
 		0DFFF4541DF06EBA00670F2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 46LJ7FTGEE;
 				INFOPLIST_FILE = uKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;
@@ -605,6 +608,7 @@
 		0DFFF4551DF06EBA00670F2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 46LJ7FTGEE;
 				INFOPLIST_FILE = uKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;
