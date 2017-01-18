@@ -23,6 +23,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var key1E: UIButton!
     @IBOutlet weak var key1F: UIButton!
     @IBOutlet weak var key1G: UIButton!
+    @IBOutlet weak var key1H: UIButton!
     
     @IBOutlet weak var key2A: UIButton!
     @IBOutlet weak var key2B: UIButton!
@@ -83,6 +84,7 @@ class SecondViewController: UIViewController {
             key1E : "Key1E",
             key1F : "Key1F",
             key1G : "Key1G",
+            key1H : "Key1H",
             
             key2A : "Key2A",
             key2B : "Key2B",
@@ -105,7 +107,7 @@ class SecondViewController: UIViewController {
             key3H : "Key3H",
             key3I : "Key3I",
             key3J : "Key3J",
-                
+            
             key4A : "Key4A",
             key4B : "Key4B",
             key4C : "Key4C",

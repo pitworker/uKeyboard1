@@ -7,15 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var types = [String]()
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var letters: UIView!
+    @IBOutlet weak var numbers: UIView!
+    @IBOutlet weak var punctuations: UIView!
+    @IBOutlet weak var emojis: UIView!
 
-    @IBOutlet weak var senderName: UILabel!
+    @IBOutlet weak var trailing: NSLayoutConstraint!
+    
+    @IBOutlet var buttonsAll: [UIButton]!
+    
+    
+    var menuShowing = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        types = ["Latin Characters", "Arabic Numbers", "Punctuations", "Emojis", "Other Characters"]
-        self.senderName.text = senderKey
+        self.letters.isHidden = false
+        self.numbers.isHidden = true
+        self.punctuations.isHidden = true
+        self.emojis.isHidden = true
+        
+        highlightSelected()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +38,86 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return types.count
+    @IBAction func expandMenu(_ sender: Any) {
+        if (menuShowing){
+            trailing.constant = -200
+        }
+        else{
+            trailing.constant = 0
+        }
+        menuShowing = !menuShowing 
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryTableViewCell
-        cell.textLabel?.text = types[indexPath.row]
-        return cell
+    @IBAction func menu_Letters(_ sender: UIButton) {
+        self.letters.isHidden = false
+        self.numbers.isHidden = true
+        self.punctuations.isHidden = true
+        self.emojis.isHidden = true
+    }
+    
+    
+    @IBAction func menu_Numbers(_ sender: UIButton) {
+        self.numbers.isHidden = false
+        self.letters.isHidden = true
+        self.punctuations.isHidden = true
+        self.emojis.isHidden = true
+    }
+    
+    
+    @IBAction func menu_Punctuations(_ sender: UIButton) {
+        self.punctuations.isHidden = false
+        self.numbers.isHidden = true
+        self.letters.isHidden = true
+        self.emojis.isHidden = true
+    }
+    
+    
+    @IBAction func menu_Emojis(_ sender: UIButton) {
+        self.emojis.isHidden = false
+        self.punctuations.isHidden = true
+        self.numbers.isHidden = true
+        self.letters.isHidden = true
+    }
+    
+    
+    @IBAction func menu_Other(_ sender: UIButton) {
     }
 
+    
+    @IBAction func anyButtonPressed(_ sender: UIButton) {
+        highlightButton(button: sender)
+        if let buttonVal = sender.titleLabel?.text {
+            setKey(val: buttonVal)
+        }
+    }
+    
+    func setKey(val: String) {
+        keyPrefs.setValue(val, forKey: senderKey)
+    }
+    
+    func highlightSelected() {
+        let selectedChar = keyPrefs.string(forKey: senderKey)
+        
+        unhighlightAll()
+        
+        for eachButton in buttonsAll {
+            if let val = eachButton.titleLabel?.text {
+                if val == selectedChar {
+                    eachButton.backgroundColor = .lightGray
+                }
+            }
+        }
+    }
+    
+    func highlightButton(button: UIButton) {
+        unhighlightAll()
+        button.backgroundColor = .lightGray
+    }
+    
+    func unhighlightAll() {
+        for eachButton in buttonsAll {
+            eachButton.backgroundColor = .none
+        }
+    }
 }
 

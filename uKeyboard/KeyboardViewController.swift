@@ -9,31 +9,73 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
+    var keyBoardView: UIView!
+    
+    @IBOutlet weak var key1A: UIButton!
+    @IBOutlet weak var key1B: UIButton!
+    @IBOutlet weak var key1C: UIButton!
+    @IBOutlet weak var key1D: UIButton!
+    @IBOutlet weak var key1E: UIButton!
+    @IBOutlet weak var key1F: UIButton!
+    @IBOutlet weak var key1G: UIButton!
+    @IBOutlet weak var key1H: UIButton!
+    
+    @IBOutlet weak var key2A: UIButton!
+    @IBOutlet weak var key2B: UIButton!
+    @IBOutlet weak var key2C: UIButton!
+    @IBOutlet weak var key2D: UIButton!
+    @IBOutlet weak var key2E: UIButton!
+    @IBOutlet weak var key2F: UIButton!
+    @IBOutlet weak var key2G: UIButton!
+    @IBOutlet weak var key2H: UIButton!
+    @IBOutlet weak var key2I: UIButton!
+    @IBOutlet weak var key2J: UIButton!
+    
+    @IBOutlet weak var key3A: UIButton!
+    @IBOutlet weak var key3B: UIButton!
+    @IBOutlet weak var key3C: UIButton!
+    @IBOutlet weak var key3D: UIButton!
+    @IBOutlet weak var key3E: UIButton!
+    @IBOutlet weak var key3F: UIButton!
+    @IBOutlet weak var key3G: UIButton!
+    @IBOutlet weak var key3H: UIButton!
+    @IBOutlet weak var key3I: UIButton!
+    @IBOutlet weak var key3J: UIButton!
+    
+    @IBOutlet weak var key4A: UIButton!
+    @IBOutlet weak var key4B: UIButton!
+    @IBOutlet weak var key4C: UIButton!
+    @IBOutlet weak var key4D: UIButton!
+    @IBOutlet weak var key4E: UIButton!
+    @IBOutlet weak var key4F: UIButton!
+    @IBOutlet weak var key4G: UIButton!
+    @IBOutlet weak var key4H: UIButton!
+    @IBOutlet weak var key4I: UIButton!
+    @IBOutlet weak var key4J: UIButton!
+    
+    @IBOutlet var allKeys: [UIButton]!
+    
+    var keyNames: [UIButton : String]!
 
-    @IBOutlet var nextKeyboardButton: UIButton!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
         // Add custom view sizing constraints here
+        setKeyNames()
+        
+        setKeyTitles()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton(type: .system)
+        let keyBoardNib = UINib(nibName: "testerKeyboard", bundle: nil)
+        keyBoardView = keyBoardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        view.addSubview(keyBoardView)
+        //
         
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-        
-        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,15 +89,111 @@ class KeyboardViewController: UIInputViewController {
     
     override func textDidChange(_ textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
+//        var textColor: UIColor
+//        let proxy = self.textDocumentProxy
+//        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
+//            textColor = UIColor.white
+//        } else {
+//            textColor = UIColor.black
+//        }
+//        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
 
+    func setKeyNames() {
+        keyNames = [
+            key1A : "Key1A",
+            key1B : "Key1B",
+            key1C : "Key1C",
+            key1D : "Key1D",
+            key1E : "Key1E",
+            key1F : "Key1F",
+            key1G : "Key1G",
+            key1H : "Key1H",
+            
+            key2A : "Key2A",
+            key2B : "Key2B",
+            key2C : "Key2C",
+            key2D : "Key2D",
+            key2E : "Key2E",
+            key2F : "Key2F",
+            key2G : "Key2G",
+            key2H : "Key2H",
+            key2I : "Key2I",
+            key2J : "Key2J",
+            
+            key3A : "Key3A",
+            key3B : "Key3B",
+            key3C : "Key3C",
+            key3D : "Key3D",
+            key3E : "Key3E",
+            key3F : "Key3F",
+            key3G : "Key3G",
+            key3H : "Key3H",
+            key3I : "Key3I",
+            key3J : "Key3J",
+            
+            key4A : "Key4A",
+            key4B : "Key4B",
+            key4C : "Key4C",
+            key4D : "Key4D",
+            key4E : "Key4E",
+            key4F : "Key4F",
+            key4G : "Key4G",
+            key4H : "Key4H",
+            key4I : "Key4I",
+            key4J : "Key4J"
+        ]
+    }
+    
+    @IBAction func keySender(_ sender: UIButton) {
+        if let buttonVal = sender.titleLabel?.text {
+            self.textDocumentProxy.insertText(buttonVal)
+        }
+        
+        
+    }
+    
+    func setKeyTitles() {
+        for eachKey in allKeys {
+            setKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
+        }
+    }
+    
+    func setKeyTitle(keyToSet: UIButton, title: String) {
+        if let keyTitle = keyPrefs.string(forKey: title) {
+            keyToSet.setTitle(keyTitle, for: .normal)
+        } else {
+            keyPrefs.setValue("", forKey: title)
+            keyToSet.setTitle("", for: .normal)
+        }
+    }
+
+    
+    @IBAction func A1Action(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("Capital")
+    }
+    
+    @IBAction func J1Action(_ sender: UIButton) {
+        self.textDocumentProxy.deleteBackward()
+    }
+    
+    @IBAction func A0Action(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("∑")
+    }
+    
+    @IBAction func B0Action(_ sender: UIButton) {
+        self.advanceToNextInputMode()
+    }
+    
+    @IBAction func C0Action(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("π")
+    }
+    
+    @IBAction func D0Action(_ sender: UIButton) {
+        self.textDocumentProxy.insertText(" ")
+    }
+    
+    @IBAction func E0Action(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("Enter")
+    }
 }
