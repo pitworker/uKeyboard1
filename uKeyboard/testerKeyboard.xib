@@ -167,8 +167,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-jP-ixr" userLabel="Row4_Layer01">
                     <rect key="frame" x="0.0" y="134" width="375" height="134"/>
                     <subviews>
+<<<<<<< HEAD
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-Ue-C7S" userLabel="R4_L1_01">
                             <rect key="frame" x="0.0" y="0.0" width="38" height="134"/>
+=======
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-Ue-C7S" userLabel="A3">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Q">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,18 +183,33 @@
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="CyJ-lN-J8g"/>
                             </connections>
                         </button>
+<<<<<<< HEAD
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m53-nn-d6R" userLabel="R4_L1_02">
                             <rect key="frame" x="38" y="0.0" width="38" height="134"/>
+=======
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m53-nn-d6R" userLabel="B3">
+                            <rect key="frame" x="40" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="W">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
+<<<<<<< HEAD
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="2b0-1C-dNO"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOs-OS-CGt" userLabel="R4_L1_03">
                             <rect key="frame" x="76" y="0.0" width="38" height="134"/>
+=======
+                                <action selector="B3Action:" destination="-1" eventType="touchUpInside" id="FsJ-Vg-Rmq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOs-OS-CGt" userLabel="C3">
+                            <rect key="frame" x="80" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="E">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -197,8 +218,14 @@
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="nEZ-G1-p4g"/>
                             </connections>
                         </button>
+<<<<<<< HEAD
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-xG-fDx" userLabel="R4_L1_04">
                             <rect key="frame" x="114" y="0.0" width="38" height="134"/>
+=======
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-xG-fDx" userLabel="D3">
+                            <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="R">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,8 +234,14 @@
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="ydx-DT-vea"/>
                             </connections>
                         </button>
+<<<<<<< HEAD
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-MM-ybr" userLabel="R4_L1_05">
                             <rect key="frame" x="152" y="0.0" width="38" height="134"/>
+=======
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-MM-ybr" userLabel="E3">
+                            <rect key="frame" x="160" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="T">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -217,8 +250,14 @@
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="K6r-kZ-GDa"/>
                             </connections>
                         </button>
+<<<<<<< HEAD
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-hu-Mvj" userLabel="R4_L1_06">
                             <rect key="frame" x="190" y="0.0" width="38" height="134"/>
+=======
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-hu-Mvj" userLabel="F3">
+                            <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> origin/SparrowKeyboard
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Y">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -264,7 +303,11 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
+<<<<<<< HEAD
                                 <action selector="KeyPressed:" destination="-1" eventType="touchUpInside" id="pBm-Hb-YkF"/>
+=======
+                                <action selector="J3Action:" destination="-1" eventType="touchUpInside" id="FKC-Mg-wtE"/>
+>>>>>>> origin/SparrowKeyboard
                             </connections>
                         </button>
                     </subviews>
