@@ -57,6 +57,7 @@ class KeyboardViewController: UIInputViewController {
     
     var keyNames: [UIButton : String]!
 
+    //let keySettings =
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -145,12 +146,10 @@ class KeyboardViewController: UIInputViewController {
         ]
     }
     
-    @IBAction func keySender(_ sender: UIButton) {
+    @IBAction func keyPressed(_ sender: UIButton) {
         if let buttonVal = sender.titleLabel?.text {
             self.textDocumentProxy.insertText(buttonVal)
         }
-        
-        
     }
     
     func setKeyTitles() {

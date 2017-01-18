@@ -11,15 +11,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="uKeyboard" customModuleProvider="target">
             <connections>
-                <outlet property="key4A" destination="fyK-zD-pxc" id="Tpu-RL-lCg"/>
-                <outlet property="key4B" destination="qoq-3u-ocH" id="P92-bJ-I2c"/>
-                <outlet property="key4C" destination="JQN-ky-lC7" id="h37-3r-EeP"/>
-                <outlet property="key4D" destination="eLv-Ju-Tka" id="UPp-KG-BUY"/>
-                <outlet property="key4E" destination="0ia-ib-Hfu" id="jV5-IJ-98H"/>
-                <outlet property="key4F" destination="VV9-NX-dmV" id="nQk-bj-gb7"/>
-                <outlet property="key4H" destination="mKC-uK-EWd" id="oXj-oY-90G"/>
-                <outlet property="key4I" destination="tBI-Q2-qea" id="DwF-Yx-yO5"/>
-                <outlet property="key4J" destination="CTW-0F-MQ6" id="gKH-7j-FBu"/>
+                <outlet property="key4A" destination="fyK-zD-pxc" id="kjj-gV-uCo"/>
+                <outlet property="key4B" destination="qoq-3u-ocH" id="YJd-72-8ex"/>
+                <outlet property="key4C" destination="hJv-zk-NFe" id="3xG-Km-Bdf"/>
+                <outlet property="key4D" destination="JQN-ky-lC7" id="2Ge-jh-ZjR"/>
+                <outlet property="key4E" destination="eLv-Ju-Tka" id="lOQ-z9-L01"/>
+                <outlet property="key4F" destination="0ia-ib-Hfu" id="TUw-5S-DBr"/>
+                <outlet property="key4G" destination="VV9-NX-dmV" id="zWq-Or-qy0"/>
+                <outlet property="key4H" destination="mKC-uK-EWd" id="h0N-zJ-014"/>
+                <outlet property="key4I" destination="tBI-Q2-qea" id="XRP-m1-cv7"/>
+                <outlet property="key4J" destination="CTW-0F-MQ6" id="Nt7-Bj-ZJA"/>
+                <outletCollection property="allKeys" destination="fyK-zD-pxc" collectionClass="NSMutableArray" id="r6Z-lZ-pmg"/>
+                <outletCollection property="allKeys" destination="qoq-3u-ocH" collectionClass="NSMutableArray" id="g1X-d6-VW0"/>
+                <outletCollection property="allKeys" destination="hJv-zk-NFe" collectionClass="NSMutableArray" id="qkA-ou-6tu"/>
+                <outletCollection property="allKeys" destination="JQN-ky-lC7" collectionClass="NSMutableArray" id="O4s-Rs-a4Y"/>
+                <outletCollection property="allKeys" destination="eLv-Ju-Tka" collectionClass="NSMutableArray" id="y7H-R9-Akc"/>
+                <outletCollection property="allKeys" destination="0ia-ib-Hfu" collectionClass="NSMutableArray" id="c8z-Rq-1Q8"/>
+                <outletCollection property="allKeys" destination="VV9-NX-dmV" collectionClass="NSMutableArray" id="ppi-IF-z4h"/>
+                <outletCollection property="allKeys" destination="mKC-uK-EWd" collectionClass="NSMutableArray" id="rJ7-jd-5pt"/>
+                <outletCollection property="allKeys" destination="tBI-Q2-qea" collectionClass="NSMutableArray" id="aof-zb-EkV"/>
+                <outletCollection property="allKeys" destination="CTW-0F-MQ6" collectionClass="NSMutableArray" id="g2P-GH-UCq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -40,6 +51,7 @@
                             </state>
                             <connections>
                                 <action selector="A4Action:" destination="-1" eventType="touchUpInside" id="FEQ-XI-bzc"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="0nO-iC-9Ks"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoq-3u-ocH" userLabel="B4">
@@ -51,6 +63,7 @@
                             </state>
                             <connections>
                                 <action selector="B4Action:" destination="-1" eventType="touchUpInside" id="T24-MT-HnL"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="spp-Hk-PUA"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJv-zk-NFe" userLabel="C4">
@@ -62,6 +75,7 @@
                             </state>
                             <connections>
                                 <action selector="C4Action:" destination="-1" eventType="touchUpInside" id="puA-68-gLi"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="vpi-fD-Eom"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQN-ky-lC7" userLabel="D4">
@@ -73,6 +87,7 @@
                             </state>
                             <connections>
                                 <action selector="D4Action:" destination="-1" eventType="touchUpInside" id="i25-dp-RgQ"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="URY-5I-2kY"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-Ju-Tka" userLabel="E4">
@@ -84,6 +99,7 @@
                             </state>
                             <connections>
                                 <action selector="E4Action:" destination="-1" eventType="touchUpInside" id="aa3-qX-Eq5"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="zSk-Hd-0gg"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ia-ib-Hfu" userLabel="F4">
@@ -95,6 +111,7 @@
                             </state>
                             <connections>
                                 <action selector="F4Action:" destination="-1" eventType="touchUpInside" id="GVT-y1-7dF"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="iEY-x5-z86"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV9-NX-dmV" userLabel="G4">
@@ -106,6 +123,7 @@
                             </state>
                             <connections>
                                 <action selector="G4Action:" destination="-1" eventType="touchUpInside" id="kKf-ct-C2K"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="hzS-Xb-ZpV"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKC-uK-EWd" userLabel="H4">
@@ -117,6 +135,7 @@
                             </state>
                             <connections>
                                 <action selector="H4Action:" destination="-1" eventType="touchUpInside" id="tXd-gw-wUv"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="rfG-I4-jBH"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBI-Q2-qea" userLabel="I4">
@@ -128,6 +147,7 @@
                             </state>
                             <connections>
                                 <action selector="I4Action:" destination="-1" eventType="touchUpInside" id="vtr-aV-gWf"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="M0x-9p-LXX"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTW-0F-MQ6" userLabel="J4">
@@ -139,6 +159,7 @@
                             </state>
                             <connections>
                                 <action selector="J4Action:" destination="-1" eventType="touchUpInside" id="etf-CP-blF"/>
+                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="L3a-Yh-96P"/>
                             </connections>
                         </button>
                     </subviews>

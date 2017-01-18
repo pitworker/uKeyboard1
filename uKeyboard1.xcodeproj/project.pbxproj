@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D40C66B1E2FE2E2007449DC /* SenderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */; };
 		0D46752C1DFEF72500F5AD62 /* SenderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */; };
 		0DFFF41A1DF06E5900670F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF4191DF06E5900670F2B /* AppDelegate.swift */; };
 		0DFFF41C1DF06E5900670F2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFF41B1DF06E5900670F2B /* ViewController.swift */; };
@@ -61,7 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderKeys.swift; sourceTree = "<group>"; };
+		0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SenderKeys.swift; path = uKeyboard1/SenderKeys.swift; sourceTree = SOURCE_ROOT; };
 		0DFFF4161DF06E5900670F2B /* uKeyboard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uKeyboard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF4191DF06E5900670F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFFF41B1DF06E5900670F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -375,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D40C66B1E2FE2E2007449DC /* SenderKeys.swift in Sources */,
 				0DFFF44E1DF06EBA00670F2B /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
