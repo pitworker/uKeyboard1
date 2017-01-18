@@ -106,7 +106,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="A4Action:" destination="-1" eventType="touchUpInside" id="FEQ-XI-bzc"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="0nO-iC-9Ks"/>
                             </connections>
                         </button>
@@ -118,7 +117,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="B4Action:" destination="-1" eventType="touchUpInside" id="T24-MT-HnL"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="spp-Hk-PUA"/>
                             </connections>
                         </button>
@@ -130,7 +128,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="C4Action:" destination="-1" eventType="touchUpInside" id="puA-68-gLi"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="vpi-fD-Eom"/>
                             </connections>
                         </button>
@@ -142,7 +139,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="D4Action:" destination="-1" eventType="touchUpInside" id="i25-dp-RgQ"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="URY-5I-2kY"/>
                             </connections>
                         </button>
@@ -154,7 +150,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="E4Action:" destination="-1" eventType="touchUpInside" id="aa3-qX-Eq5"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="zSk-Hd-0gg"/>
                             </connections>
                         </button>
@@ -166,7 +161,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="F4Action:" destination="-1" eventType="touchUpInside" id="GVT-y1-7dF"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="iEY-x5-z86"/>
                             </connections>
                         </button>
@@ -178,7 +172,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="G4Action:" destination="-1" eventType="touchUpInside" id="kKf-ct-C2K"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="hzS-Xb-ZpV"/>
                             </connections>
                         </button>
@@ -190,7 +183,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="H4Action:" destination="-1" eventType="touchUpInside" id="tXd-gw-wUv"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="rfG-I4-jBH"/>
                             </connections>
                         </button>
@@ -202,7 +194,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="I4Action:" destination="-1" eventType="touchUpInside" id="vtr-aV-gWf"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="M0x-9p-LXX"/>
                             </connections>
                         </button>
@@ -214,7 +205,6 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="J4Action:" destination="-1" eventType="touchUpInside" id="etf-CP-blF"/>
                                 <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="L3a-Yh-96P"/>
                             </connections>
                         </button>

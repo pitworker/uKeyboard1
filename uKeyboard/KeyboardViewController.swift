@@ -146,9 +146,10 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
-        if let buttonVal = sender.titleLabel?.text {
+        self.textDocumentProxy.insertText("?")
+        /*if let buttonVal = sender.titleLabel!.text {
             self.textDocumentProxy.insertText(buttonVal)
-        }
+        }*/
     }
     
     func setKeyTitles() {
@@ -158,12 +159,16 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func setKeyTitle(keyToSet: UIButton, title: String) {
+        keyPrefs.setValue("?", forKey: title)
+        keyToSet.setTitle(keyPrefs.string(forKey: title), for: .normal)
+        /*
         if let keyTitle = keyPrefs.string(forKey: title) {
             keyToSet.setTitle(keyTitle, for: .normal)
         } else {
             keyPrefs.setValue("", forKey: title)
             keyToSet.setTitle("", for: .normal)
         }
+ */
     }
 
     
