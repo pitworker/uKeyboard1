@@ -136,7 +136,7 @@
                     <rect key="frame" x="0.0" y="40" width="400" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-Ue-C7S">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-Ue-C7S" userLabel="A3">
                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,7 +147,18 @@
                                 <action selector="A3Action:" destination="-1" eventType="touchUpInside" id="Qbh-MJ-c6K"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOs-OS-CGt">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m53-nn-d6R" userLabel="B3">
+                            <rect key="frame" x="40" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="W">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="B3Action:" destination="-1" eventType="touchUpInside" id="FsJ-Vg-Rmq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOs-OS-CGt" userLabel="C3">
                             <rect key="frame" x="80" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,7 +169,7 @@
                                 <action selector="C3Action:" destination="-1" eventType="touchUpInside" id="iaW-1F-eNg"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-xG-fDx">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-xG-fDx" userLabel="D3">
                             <rect key="frame" x="120" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,7 +180,7 @@
                                 <action selector="D3Action:" destination="-1" eventType="touchUpInside" id="WwI-XV-Put"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-MM-ybr">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-MM-ybr" userLabel="E3">
                             <rect key="frame" x="160" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,7 +191,7 @@
                                 <action selector="E3Action:" destination="-1" eventType="touchUpInside" id="le9-kS-tN0"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-hu-Mvj">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-hu-Mvj" userLabel="F3">
                             <rect key="frame" x="200" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -233,17 +244,6 @@
                             </state>
                             <connections>
                                 <action selector="J3Action:" destination="-1" eventType="touchUpInside" id="FKC-Mg-wtE"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m53-nn-d6R">
-                            <rect key="frame" x="40" y="0.0" width="40" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.1859533629" green="0.1859533629" blue="0.1859533629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="W">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="B3Action:" destination="-1" eventType="touchUpInside" id="FsJ-Vg-Rmq"/>
                             </connections>
                         </button>
                     </subviews>
