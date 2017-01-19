@@ -62,19 +62,19 @@ class SecondViewController: UIViewController {
     
     var keyNames: [UIButton : String]!
     
-    public var updateKeys: Bool = false {
-        willSet{
-            if newValue == true {
-                setKeyTitles()
-                resetKey = !resetKey
-            }
-        }
-    }
-    var resetKey: Bool = false {
-        willSet{
-            updateKeys = false
-        }
-    }
+//    public static var updateKeys: Bool = false {
+//        willSet{
+//            if newValue == true {
+//                setKeyTitles()
+//                SecondViewController.resetKey = !SecondViewController.resetKey
+//            }
+//        }
+//    }
+//    public static var resetKey: Bool = false {
+//        willSet{
+//            SecondViewController.updateKeys = false
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +87,12 @@ class SecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setKeyNames()
+        setKeyTitles()
     }
     
     func setKeyNames() {

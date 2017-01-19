@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         highlightButton(button: sender)
         if let buttonVal = sender.titleLabel?.text {
             setKey(val: buttonVal)
-            SecondViewController().updateKeys = true
+            //SecondViewController().updateKeys = true
         }
     }
     
