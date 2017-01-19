@@ -69,13 +69,12 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
         
         // Perform custom UI setup here
-        let keyBoardNib = UINib(nibName: "testerKeyboard", bundle: nil)
+        let keyBoardNib = UINib(nibName: "Keyboard", bundle: nil)
         keyBoardView = keyBoardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.addSubview(keyBoardView)
         //
-        setKeyNames()
-        
-        setKeyTitles()
+        //setKeyNames()
+        //setKeyTitles()
     }
     
     override func didReceiveMemoryWarning() {
@@ -145,12 +144,12 @@ class KeyboardViewController: UIInputViewController {
         ]
     }
     
-    @IBAction func keyPressed(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("?")
-        /*if let buttonVal = sender.titleLabel!.text {
-            self.textDocumentProxy.insertText(buttonVal)
-        }*/
-    }
+//    @IBAction func keyPressed(_ sender: UIButton) {
+//        self.textDocumentProxy.insertText("?")
+//        /*if let buttonVal = sender.titleLabel!.text {
+//            self.textDocumentProxy.insertText(buttonVal)
+//        }*/
+//    }
     
     func setKeyTitles() {
         for eachKey in allKeys {
@@ -171,32 +170,25 @@ class KeyboardViewController: UIInputViewController {
  */
     }
 
+    /****************Keyboard Typing******************/
     
-    @IBAction func A1Action(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("Capital")
-    }
-    
-    @IBAction func J1Action(_ sender: UIButton) {
-        self.textDocumentProxy.deleteBackward()
-    }
-    
-    @IBAction func A0Action(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("∑")
-    }
-    
-    @IBAction func B0Action(_ sender: UIButton) {
+    @IBAction func globeKeyPressed(_ sender: UIButton) {
         self.advanceToNextInputMode()
     }
     
-    @IBAction func C0Action(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("π")
-    }
-    
-    @IBAction func D0Action(_ sender: UIButton) {
+    @IBAction func spaceKeyPressed(_ sender: UIButton) {
         self.textDocumentProxy.insertText(" ")
     }
     
-    @IBAction func E0Action(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("Enter")
+    @IBAction func returnKeyPressed(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("\n")
+    }
+    
+    @IBAction func deleteKeyPressed(_ sender: UIButton) {
+        self.textDocumentProxy.deleteBackward()
+    }
+    
+    @IBAction func keyPressed(_ sender: UIButton) {
+        self.textDocumentProxy.insertText("\(sender.titleLabel!.text!)")
     }
 }

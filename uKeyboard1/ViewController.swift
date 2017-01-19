@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numbers: UIView!
     @IBOutlet weak var punctuations: UIView!
     @IBOutlet weak var emojis: UIView!
+    @IBOutlet weak var other: UIView!
 
     @IBOutlet weak var trailing: NSLayoutConstraint!
     
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         self.numbers.isHidden = true
         self.punctuations.isHidden = true
         self.emojis.isHidden = true
+        self.other.isHidden = true
         
         highlightSelected()
     }
@@ -53,6 +55,7 @@ class ViewController: UIViewController {
         self.numbers.isHidden = true
         self.punctuations.isHidden = true
         self.emojis.isHidden = true
+        self.other.isHidden = true
     }
     
     
@@ -61,6 +64,7 @@ class ViewController: UIViewController {
         self.letters.isHidden = true
         self.punctuations.isHidden = true
         self.emojis.isHidden = true
+        self.other.isHidden = true
     }
     
     
@@ -69,6 +73,7 @@ class ViewController: UIViewController {
         self.numbers.isHidden = true
         self.letters.isHidden = true
         self.emojis.isHidden = true
+        self.other.isHidden = true
     }
     
     
@@ -77,10 +82,16 @@ class ViewController: UIViewController {
         self.punctuations.isHidden = true
         self.numbers.isHidden = true
         self.letters.isHidden = true
+        self.other.isHidden = true
     }
     
     
     @IBAction func menu_Other(_ sender: UIButton) {
+        self.other.isHidden = false
+        self.letters.isHidden = true
+        self.numbers.isHidden = true
+        self.punctuations.isHidden = true
+        self.emojis.isHidden = true
     }
 
     
