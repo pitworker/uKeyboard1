@@ -62,6 +62,20 @@ class SecondViewController: UIViewController {
     
     var keyNames: [UIButton : String]!
     
+    public var updateKeys: Bool = false {
+        willSet{
+            if newValue == true {
+                setKeyTitles()
+                resetKey = !resetKey
+            }
+        }
+    }
+    var resetKey: Bool = false {
+        willSet{
+            updateKeys = false
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -134,10 +148,10 @@ class SecondViewController: UIViewController {
     }
     
     func setKeyTitle(keyToSet: UIButton, title: String) {
-        if let keyTitle = keyPrefs.string(forKey: title) {
+        if let keyTitle = keyPrefs!.string(forKey: title) {
             keyToSet.setTitle(keyTitle, for: .normal)
         } else {
-            keyPrefs.setValue("", forKey: title)
+            keyPrefs!.setValue("", forKey: title)
             keyToSet.setTitle("", for: .normal)
         }
     }

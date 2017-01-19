@@ -17,8 +17,8 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var key1D: UIButton!
     @IBOutlet weak var key1E: UIButton!
     @IBOutlet weak var key1F: UIButton!
-    @IBOutlet weak var key1G: UIButton!
-    @IBOutlet weak var key1H: UIButton!
+    //@IBOutlet weak var key1G: UIButton!
+   // @IBOutlet weak var key1H: UIButton!
     
     @IBOutlet weak var key2A: UIButton!
     @IBOutlet weak var key2B: UIButton!
@@ -72,9 +72,9 @@ class KeyboardViewController: UIInputViewController {
         let keyBoardNib = UINib(nibName: "Keyboard", bundle: nil)
         keyBoardView = keyBoardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.addSubview(keyBoardView)
-        //
-        //setKeyNames()
-        //setKeyTitles()
+        
+        setKeyNames()
+        setKeyTitles()
     }
     
     override func didReceiveMemoryWarning() {
@@ -106,8 +106,8 @@ class KeyboardViewController: UIInputViewController {
             key1D : "Key1D",
             key1E : "Key1E",
             key1F : "Key1F",
-            key1G : "Key1G",
-            key1H : "Key1H",
+           // key1G : "Key1G",
+           // key1H : "Key1H",
             
             key2A : "Key2A",
             key2B : "Key2B",
@@ -158,16 +158,12 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func setKeyTitle(keyToSet: UIButton, title: String) {
-        keyPrefs.setValue("?", forKey: title)
-        keyToSet.setTitle(keyPrefs.string(forKey: title), for: .normal)
-        /*
-        if let keyTitle = keyPrefs.string(forKey: title) {
+        if let keyTitle = keyPrefs!.string(forKey: title) {
             keyToSet.setTitle(keyTitle, for: .normal)
         } else {
-            keyPrefs.setValue("", forKey: title)
-            keyToSet.setTitle("", for: .normal)
+            keyPrefs!.setValue("?", forKey: title)
+            keyToSet.setTitle("?", for: .normal)
         }
- */
     }
 
     /****************Keyboard Typing******************/

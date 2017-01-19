@@ -63,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		0D46752B1DFEF72500F5AD62 /* SenderKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SenderKeys.swift; path = uKeyboard1/SenderKeys.swift; sourceTree = SOURCE_ROOT; };
+		0DAB4B901E30824A0085F15F /* uKeyboard1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uKeyboard1.entitlements; sourceTree = "<group>"; };
+		0DAB4B911E3083590085F15F /* uKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uKeyboard.entitlements; sourceTree = "<group>"; };
 		0DFFF4161DF06E5900670F2B /* uKeyboard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uKeyboard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFFF4191DF06E5900670F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFFF41B1DF06E5900670F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		0DFFF4181DF06E5900670F2B /* uKeyboard1 */ = {
 			isa = PBXGroup;
 			children = (
+				0DAB4B901E30824A0085F15F /* uKeyboard1.entitlements */,
 				0DFFF4191DF06E5900670F2B /* AppDelegate.swift */,
 				2B965E9C1DF6FDCC00C24A81 /* FirstViewController.swift */,
 				2B965E9E1DF6FE0000C24A81 /* SecondViewController.swift */,
@@ -175,6 +178,7 @@
 		0DFFF44C1DF06EBA00670F2B /* uKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				0DAB4B911E3083590085F15F /* uKeyboard.entitlements */,
 				0DFFF44D1DF06EBA00670F2B /* KeyboardViewController.swift */,
 				2B81A7991E1E96A800A9BB8A /* Keyboard.xib */,
 				0DFFF44F1DF06EBA00670F2B /* Info.plist */,
@@ -269,7 +273,13 @@
 				TargetAttributes = {
 					0DFFF4151DF06E5800670F2B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 85K724P57B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0DFFF4291DF06E5900670F2B = {
 						CreatedOnToolsVersion = 8.1;
@@ -283,7 +293,13 @@
 					};
 					0DFFF44A1DF06EB900670F2B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 85K724P57B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -519,6 +535,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uKeyboard1/uKeyboard1.entitlements;
+				DEVELOPMENT_TEAM = 85K724P57B;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1;
@@ -532,6 +550,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uKeyboard1/uKeyboard1.entitlements;
+				DEVELOPMENT_TEAM = 85K724P57B;
 				INFOPLIST_FILE = uKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1;
@@ -597,6 +617,8 @@
 		0DFFF4541DF06EBA00670F2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = uKeyboard/uKeyboard.entitlements;
+				DEVELOPMENT_TEAM = 85K724P57B;
 				INFOPLIST_FILE = uKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;
@@ -609,6 +631,8 @@
 		0DFFF4551DF06EBA00670F2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = uKeyboard/uKeyboard.entitlements;
+				DEVELOPMENT_TEAM = 85K724P57B;
 				INFOPLIST_FILE = uKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarpenter17.uKeyboard1.uKeyboard;

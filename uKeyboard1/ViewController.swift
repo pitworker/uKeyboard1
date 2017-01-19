@@ -99,15 +99,16 @@ class ViewController: UIViewController {
         highlightButton(button: sender)
         if let buttonVal = sender.titleLabel?.text {
             setKey(val: buttonVal)
+            SecondViewController().updateKeys = true
         }
     }
     
     func setKey(val: String) {
-        keyPrefs.setValue(val, forKey: senderKey)
+        keyPrefs!.setValue(val, forKey: senderKey)
     }
     
     func highlightSelected() {
-        let selectedChar = keyPrefs.string(forKey: senderKey)
+        let selectedChar = keyPrefs!.string(forKey: senderKey)
         
         unhighlightAll()
         

@@ -7,5 +7,6 @@
 //
 
 import Foundation
-let keyPrefs = UserDefaults.standard
+let keyPrefs = UserDefaults(suiteName: "group.uKeyboard.uKeyboardStuff")
 var senderKey = ""
+var keyUpdated = false
