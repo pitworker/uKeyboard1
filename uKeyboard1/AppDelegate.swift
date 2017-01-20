@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  uKeyboard1
 //
-//  Created by Thelonius Mbortov on 12/1/16.
+//  Created by Sebastian Carpenter on 12/1/16.
 //  Copyright © 2016 uKeyboard. All rights reserved.
 //
 

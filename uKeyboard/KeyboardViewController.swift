@@ -2,7 +2,7 @@
 //  KeyboardViewController.swift
 //  uKeyboard
 //
-//  Created by Thelonius Mbortov on 12/1/16.
+//  Created by Sebastian Carpenter on 12/1/16.
 //  Copyright © 2016 uKeyboard. All rights reserved.
 //
 
@@ -58,8 +58,6 @@ class KeyboardViewController: UIInputViewController {
     var keyNames: [UIButton : String]!
     
     var shiftIsOn = false
-
-    //let keySettings =
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -135,13 +133,6 @@ class KeyboardViewController: UIInputViewController {
         ]
     }
     
-//    @IBAction func keyPressed(_ sender: UIButton) {
-//        self.textDocumentProxy.insertText("?")
-//        /*if let buttonVal = sender.titleLabel!.text {
-//            self.textDocumentProxy.insertText(buttonVal)
-//        }*/
-//    }
-    
     func setKeyTitles() {
         for eachKey in allKeys {
             setIndividualKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
@@ -203,7 +194,10 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("\(sender.titleLabel!.text!)")
+        if let symbolToType = sender.titleLabel!.text {
+            self.textDocumentProxy.insertText(symbolToType)
+            //self.textDocumentProxy.insertText("\(sender.titleLabel!.text!)")
+        }
         resetKeys()
     }
 }
