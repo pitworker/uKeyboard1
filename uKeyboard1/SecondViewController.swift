@@ -10,20 +10,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    //the rows that hold each key
     @IBOutlet weak var firstRow: UIStackView!
     @IBOutlet weak var secondRow: UIStackView!
     @IBOutlet weak var thirdRow: UIStackView!
     @IBOutlet weak var fourthRow: UIStackView!
     
-    
+    //each key is defined independently as an outlet
     @IBOutlet weak var key1A: UIButton!
     @IBOutlet weak var key1B: UIButton!
     @IBOutlet weak var key1C: UIButton!
     @IBOutlet weak var key1D: UIButton!
     @IBOutlet weak var key1E: UIButton!
     @IBOutlet weak var key1F: UIButton!
-    @IBOutlet weak var key1G: UIButton!
-    @IBOutlet weak var key1H: UIButton!
     
     @IBOutlet weak var key2A: UIButton!
     @IBOutlet weak var key2B: UIButton!
@@ -58,23 +57,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var key4I: UIButton!
     @IBOutlet weak var key4J: UIButton!
     
+    //a collection of all the keys, allowing the code to refer to the keys more generally
     @IBOutlet var allKeys: [UIButton]!
     
+    //each key is associated with a string that identifies it
     var keyNames: [UIButton : String]!
     
-//    public static var updateKeys: Bool = false {
-//        willSet{
-//            if newValue == true {
-//                setKeyTitles()
-//                SecondViewController.resetKey = !SecondViewController.resetKey
-//            }
-//        }
-//    }
-//    public static var resetKey: Bool = false {
-//        willSet{
-//            SecondViewController.updateKeys = false
-//        }
-//    }
+    //will be defined with the key whose character the user intends to set
+    static var senderKey = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,13 +79,13 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { //necessary for updating the view when transitioning between tab views
         super.viewDidAppear(animated)
         setKeyNames()
         setKeyTitles()
     }
     
-    func setKeyNames() {
+    func setKeyNames() { //defines the name of each key as a string (this allows the character selector to know what key to define)
         keyNames = [
             key1A : "Key1A",
             key1B : "Key1B",
@@ -103,8 +93,6 @@ class SecondViewController: UIViewController {
             key1D : "Key1D",
             key1E : "Key1E",
             key1F : "Key1F",
-            key1G : "Key1G",
-            key1H : "Key1H",
             
             key2A : "Key2A",
             key2B : "Key2B",
@@ -141,19 +129,19 @@ class SecondViewController: UIViewController {
         ]
     }
     
-    @IBAction func keySender(_ sender: UIButton) {
+    @IBAction func keySender(_ sender: UIButton) { //collects information on which key is to be changed
         if let keySelected = keyNames![sender] {
-            senderKey = keySelected
+            SecondViewController.senderKey = keySelected
         }
     }
     
-    func setKeyTitles() {
+    func setKeyTitles() { //sets the character that appears on the keys
         for eachKey in allKeys {
-            setKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
+            setIndividualKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
         }
     }
     
-    func setKeyTitle(keyToSet: UIButton, title: String) {
+    func setIndividualKeyTitle(keyToSet: UIButton, title: String) { //sets the character of an individual key
         if let keyTitle = keyPrefs!.string(forKey: title) {
             keyToSet.setTitle(keyTitle, for: .normal)
         } else {

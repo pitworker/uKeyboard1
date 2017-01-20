@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+
 
 class KeyboardViewController: UIInputViewController {
     var keyBoardView: UIView!
@@ -17,8 +19,6 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var key1D: UIButton!
     @IBOutlet weak var key1E: UIButton!
     @IBOutlet weak var key1F: UIButton!
-    //@IBOutlet weak var key1G: UIButton!
-   // @IBOutlet weak var key1H: UIButton!
     
     @IBOutlet weak var key2A: UIButton!
     @IBOutlet weak var key2B: UIButton!
@@ -56,6 +56,8 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var allKeys: [UIButton]!
     
     var keyNames: [UIButton : String]!
+    
+    var shiftIsOn = false
 
     //let keySettings =
     
@@ -87,15 +89,6 @@ class KeyboardViewController: UIInputViewController {
     }
     
     override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-//        var textColor: UIColor
-//        let proxy = self.textDocumentProxy
-//        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-//            textColor = UIColor.white
-//        } else {
-//            textColor = UIColor.black
-//        }
-//        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
 
     func setKeyNames() {
@@ -106,8 +99,6 @@ class KeyboardViewController: UIInputViewController {
             key1D : "Key1D",
             key1E : "Key1E",
             key1F : "Key1F",
-           // key1G : "Key1G",
-           // key1H : "Key1H",
             
             key2A : "Key2A",
             key2B : "Key2B",
@@ -153,11 +144,11 @@ class KeyboardViewController: UIInputViewController {
     
     func setKeyTitles() {
         for eachKey in allKeys {
-            setKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
+            setIndividualKeyTitle(keyToSet: eachKey, title: keyNames[eachKey]!)
         }
     }
     
-    func setKeyTitle(keyToSet: UIButton, title: String) {
+    func setIndividualKeyTitle(keyToSet: UIButton, title: String) {
         if let keyTitle = keyPrefs!.string(forKey: title) {
             keyToSet.setTitle(keyTitle, for: .normal)
         } else {
@@ -166,25 +157,53 @@ class KeyboardViewController: UIInputViewController {
         }
     }
 
+    func capitalizeLetters() {
+        for eachKey in allKeys {
+            let withCapital = eachKey.titleLabel!.text!.capitalized
+            eachKey.setTitle(withCapital, for: .normal)
+            shiftIsOn = true
+        }
+    }
+    
+    func resetKeys() {
+        if shiftIsOn {
+            shiftIsOn = false
+            setKeyTitles()
+        }
+    }
+    
     /****************Keyboard Typing******************/
     
     @IBAction func globeKeyPressed(_ sender: UIButton) {
         self.advanceToNextInputMode()
+        resetKeys()
     }
     
     @IBAction func spaceKeyPressed(_ sender: UIButton) {
         self.textDocumentProxy.insertText(" ")
+        resetKeys()
     }
     
     @IBAction func returnKeyPressed(_ sender: UIButton) {
         self.textDocumentProxy.insertText("\n")
+        resetKeys()
     }
     
     @IBAction func deleteKeyPressed(_ sender: UIButton) {
         self.textDocumentProxy.deleteBackward()
+        resetKeys()
+    }
+    
+    @IBAction func shiftKeyPressed(_ sender: UIButton) {
+        if shiftIsOn {
+            resetKeys()
+        } else {
+            capitalizeLetters()
+        }
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
         self.textDocumentProxy.insertText("\(sender.titleLabel!.text!)")
+        resetKeys()
     }
 }
